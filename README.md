@@ -34,5 +34,11 @@ This project provides a website where:
 - Backend: Python,FastAPI
 - Database: PostgreSQL
 - Dev environment: Vite
-  
+
+## Video Demo
+
+https://cv-statement-detective.hosting.codeyourfuture.io/
+
+https://github.com/user-attachments/assets/8eea3567-f7f0-4c9f-b8bc-4da15b77534e
+
 
