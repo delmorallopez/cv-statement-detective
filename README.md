@@ -28,6 +28,29 @@ This project provides a website where:
 - Volunteer can control and start the game.
 - Scoring system shows which statements were personal vs. generic.
 
+## Solution
+We built a full-stack multiplayer web application that transforms CV personal statement review into an interactive classroom game.
+
+The solution allows a volunteer to create and manage a game session while trainees join using a shared game link and optional passcode. Each participant submits a personal statement anonymously, and the system presents statements one at a time for players to guess who wrote them.
+
+The application coordinates game state in real time across multiple users using a FastAPI backend and polling-based frontend updates. At the end of the game, results and scores reveal how identifiable or generic each statement was, helping trainees improve the authenticity of their CV writing in a fun and engaging way.
+
+The system was designed to be lightweight, accessible, and easy to deploy, using:
+
+Frontend: Vanilla JavaScript + Vite
+Backend: Python + FastAPI
+Database: PostgreSQL + SQLAlchemy
+Database migrations: Alembic
+Hosting & automation: Coolify + Cron jobs for automatic cleanup of expired games
+
+Additional features included:
+
+Host controls for starting and ending games
+Input validation and duplicate-player prevention
+Passcode-protected game access
+Automatic deletion of game data after 24 hours
+Responsive and user-friendly interface for classroom use
+
 ## Tech Stack
 
 - Frontend: HTML, JavaScript, Tailwind CSS
